@@ -1,0 +1,209 @@
+/* line 1, ../../sass/hr/index.scss */
+
+html,
+body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    touch-action:none;
+}
+
+
+/* line 7, ../../sass/hr/index.scss */
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* line 12, ../../sass/hr/index.scss */
+
+.tab1-content,
+.tab2-content {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.tab1-content ul,
+.tab2-content ul {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    transition:all linear 0.5s;
+}
+
+.tab1-content ul li,
+.tab2-content ul li {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+.tab1-content ul li.firstscreen{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: url(../../img/hr/tab1/1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.tab1-content ul li{
+    background: url(../../img/hr/tab1/bg/1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.tab2-content ul li:nth-child(1) {
+    background: url(../../img/hr/tab2/bg2/1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.tab2-content ul li:nth-child(2) {
+    background: url(../../img/hr/tab2/bg2/2.jpg) no-repeat center;
+    background-size: cover;
+}
+.tab2-content ul li:nth-child(2) img{
+    position: relative;
+    left: -45px;
+}
+
+.tab2-content ul li:nth-child(3) {
+    background: url(../../img/hr/tab2/bg2/3.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.tab2-content ul li:nth-child(4) {
+    background: url(../../img/hr/tab2/bg2/4.jpg) no-repeat center;
+    background-size: cover;
+}
+
+
+/* line 15, ../../sass/hr/index.scss */
+
+.tab1-content img,
+.tab2-content img {
+    height: 100%;
+    padding-bottom: 44px;
+    margin: auto;
+    display: block;
+    box-sizing: border-box;
+}
+
+
+/* line 21, ../../sass/hr/index.scss */
+
+.tab {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 14px;
+}
+
+
+/* line 31, ../../sass/hr/index.scss */
+
+.tab>ul {
+    height: 44px;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+}
+
+
+/* line 36, ../../sass/hr/index.scss */
+
+.tab>ul li {
+    -webkit-box-flex: 1;
+    text-align: center;
+    color: #848484;
+    background-color: #3a3a3a;
+}
+
+
+/* line 41, ../../sass/hr/index.scss */
+
+.tab>ul li:nth-child(1) {
+    border-right: 1px solid #fff;
+}
+
+
+/* line 44, ../../sass/hr/index.scss */
+
+.tab>ul li:nth-child(2) {
+    border-right: 1px solid #fff;
+}
+
+.tab .cur {
+    color: #e3e3e3;
+    background: #2fc3a3;
+    cursor: default;
+}
+
+.music .play {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: url(../../img/hr/m1.png) no-repeat center;
+    background-size: 100% auto;
+    z-index: 30;
+}
+
+.music .stop {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: url(../../img/hr/m2.png) no-repeat center;
+    background-size: 100% auto;
+    z-index: 30;
+    display: none;
+}
+
+.row {
+    position: absolute;
+    bottom: 44px;
+    right: 50%;
+    margin-right: -15px;
+    display: block;
+    width: 30px;
+    height: 60px;
+    background: url(../../img/hr/row.png) no-repeat center;
+    background-size: 100% auto;
+    z-index: 30;
+    -webkit-animation: arrow ease 2s infinite;
+}
+
+@-webkit-keyframes arrow {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d0, 0px, 0);
+    }
+    50% {
+        -webkit-transform: translate3d(0, -10px, 0);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translate3d(0, -20px, 0);
+        opacity: 0;
+    }
+}
+
+audio {
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+}
